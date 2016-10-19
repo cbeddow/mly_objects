@@ -65,7 +65,7 @@ map.on('style.load', function () {
             'source-layer': 'objects',
             "paint": {
                 "circle-radius": 2,
-                "circle-color": "white",
+                "circle-color": "red",
                 "circle-opacity": {
                     "stops": [
                         [14, 0.5],
@@ -77,7 +77,7 @@ map.on('style.load', function () {
 
 
   map.addSource("mapillaryT", mapillaryTrafficSigns);
-  map.addLayer(mapillaryTraffic, 'stops');
+  map.addLayer(mapillaryTraffic);
   map.addSource('mapillary', mapillarySource);
   map.addLayer({
       'id': 'mapillary',
